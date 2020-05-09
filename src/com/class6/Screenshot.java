@@ -15,9 +15,15 @@ public class Screenshot extends CommonMethods {
 	public static void main(String[] args) {
 
 		setUp("chrome", "https://opensource-demo.orangehrmlive.com/");
+		
+		
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		WebElement password = driver.findElement(By.name("txtPassword"));
-		password.sendKeys("admin1234");
+		password.sendKeys("admin123");
+		
+
+		
+		
 		driver.findElement(By.className("button")).click();
 
 		String userName = "Admin";
